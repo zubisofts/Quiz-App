@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:layout_marginBottom="16dp"
+           android:textColor="#fff"
+           android:text="Quiz App"/>
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardElevation="8dp"
+           app:cardCornerRadius="8dp"
+           android:layout_margin="16dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:padding="16dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="32sp"
+                   android:textStyle="bold"
+                   android:textColor="#000"
+                   android:text="Welcome"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="16dp"
+                   android:text="Please enter your name."/>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/txtNameLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="16dp"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:hint="Name">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/txtName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btnStart"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:backgroundTint="@color/colorAccent"
+                   android:text="START"
+                   android:padding="16dp"/>
+
+           </LinearLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
