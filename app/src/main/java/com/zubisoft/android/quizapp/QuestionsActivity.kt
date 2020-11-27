@@ -1,5 +1,6 @@
 package com.zubisoft.android.quizapp
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -35,13 +36,18 @@ class QuestionsActivity : AppCompatActivity() {
                 currentIndex++
                 setQuestion(questions, currentIndex)
                 resetOptions()
+            }else if(currentIndex==questions.size-1){
                 submitResult()
             }
         }
     }
 
     private fun submitResult() {
-
+        val intent= Intent(this, ResultActivity::class.java)
+        intent.putExtra("questions",questions)
+        intent.putExtra("answers",correctAnswers)
+        startActivity(intent)
+        finish()
     }
 
     private fun resetOptions() {

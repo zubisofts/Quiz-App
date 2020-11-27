@@ -14,8 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="32dp"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
@@ -35,9 +35,9 @@
                 android:background="@drawable/dotted_border" />
 
             <TextView
+                android:id="@+id/txtQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtQuestion"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="40dp"
@@ -53,186 +53,214 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/option1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/option1"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:contentPadding="8dp"
                     android:layout_marginTop="12dp"
-                    app:strokeWidth="1dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp"
-                    app:strokeColor="#C7B299"
+                    android:clickable="true"
                     android:focusable="true"
-                    android:clickable="true">
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp"
+                    app:strokeColor="#C7B299"
+                    app:strokeWidth="1dp">
 
                     <LinearLayout
                         android:id="@+id/ll_option"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:weightSum="8"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="8">
 
-                        <TextView
-                            android:id="@+id/txtOption1"
+                        <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="7"
-                            android:text="InavlidInputException"
-                            android:textColor="@android:color/white"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"/>
+                            android:layout_marginRight="24dp"
+                            android:layout_weight="7">
+
+                            <TextView
+                                android:id="@+id/txtOption1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="InavlidInputException"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/checkbox1"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:clickable="false"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:button="@drawable/custom_checkbox"
-                            app:buttonTint="@color/checkbox_color"
-                            tools:targetApi="21"
+                            android:clickable="false"
                             android:scaleX="1.5"
                             android:scaleY="1.5"
-                            />
+                            app:buttonTint="@color/checkbox_color"
+                            tools:targetApi="21" />
 
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/option2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/option2"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:contentPadding="8dp"
                     android:layout_marginTop="12dp"
-                    app:strokeWidth="1dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp"
-                    app:strokeColor="#C7B299"
+                    android:clickable="true"
                     android:focusable="true"
-                    android:clickable="true">
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp"
+                    app:strokeColor="#C7B299"
+                    app:strokeWidth="1dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:weightSum="8"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="8">
 
-                        <TextView
-                            android:id="@+id/txtOption2"
+                        <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="7"
-                            android:text="int arr[[]];"
-                            android:textColor="@android:color/white"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"/>
+                            android:layout_marginRight="24dp"
+                            android:layout_weight="7">
+
+                            <TextView
+                                android:id="@+id/txtOption2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="InavlidInputException"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/checkbox2"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:clickable="false"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:button="@drawable/custom_checkbox"
-                            app:buttonTint="@color/checkbox_color"
-                            tools:targetApi="21"
+                            android:clickable="false"
                             android:scaleX="1.5"
                             android:scaleY="1.5"
-                            />
+                            app:buttonTint="@color/checkbox_color"
+                            tools:targetApi="21" />
 
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/option3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/option3"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:contentPadding="8dp"
                     android:layout_marginTop="12dp"
-                    app:strokeWidth="1dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp"
-                    app:strokeColor="#C7B299"
+                    android:clickable="true"
                     android:focusable="true"
-                    android:clickable="true">
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp"
+                    app:strokeColor="#C7B299"
+                    app:strokeWidth="1dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:weightSum="8"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="8">
 
-                        <TextView
-                            android:id="@+id/txtOption3"
+                        <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="7"
-                            android:text="int arr[[]];"
-                            android:textColor="@android:color/white"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"/>
+                            android:layout_marginRight="24dp"
+                            android:layout_weight="7">
+
+                            <TextView
+                                android:id="@+id/txtOption3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="InavlidInputException"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/checkbox3"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:clickable="false"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:button="@drawable/custom_checkbox"
-                            app:buttonTint="@color/checkbox_color"
-                            tools:targetApi="21"
+                            android:clickable="false"
                             android:scaleX="1.5"
                             android:scaleY="1.5"
-                            />
+                            app:buttonTint="@color/checkbox_color"
+                            tools:targetApi="21" />
 
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/option4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/option4"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:contentPadding="8dp"
                     android:layout_marginTop="12dp"
-                    app:strokeWidth="1dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp"
-                    app:strokeColor="#C7B299"
+                    android:clickable="true"
                     android:focusable="true"
-                    android:clickable="true">
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp"
+                    app:strokeColor="#C7B299"
+                    app:strokeWidth="1dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:weightSum="8"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="8">
 
-                        <TextView
-                            android:id="@+id/txtOption4"
+                        <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="7"
-                            android:text="int arr[[]];"
-                            android:textColor="@android:color/white"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"/>
+                            android:layout_marginRight="24dp"
+                            android:layout_weight="7">
+
+                            <TextView
+                                android:id="@+id/txtOption4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="InavlidInputException"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/checkbox4"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:clickable="false"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:button="@drawable/custom_checkbox"
-                            app:buttonTint="@color/checkbox_color"
-                            tools:targetApi="21"
+                            android:clickable="false"
                             android:scaleX="1.5"
                             android:scaleY="1.5"
-                            />
+                            app:buttonTint="@color/checkbox_color"
+                            tools:targetApi="21" />
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
